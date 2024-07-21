@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Batu Gunting Kertas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Batu Gunting Kertas</title>
+</head>
+
+<body>
+  <button class="button" onclick="
+    const randomNumber = Math.random();
+    let computerMove ='';
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3 ){
+      computerMove = 'Batu';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+      computerMove = 'Kertas';
+    } else if(randomNumber >= 2 / 3 && randomNumber < 1){
+      computerMove = 'Gunting';
+    }
+
+    let hasil ='';
+    if(computerMove ==='Batu'){
+      hasil='Seri.'
+    } else if (computerMove === 'Kertas') {
+      hasil='Kamu Kalah.'
+    } else if (computerMove ==='Gunting') {
+      hasil='Kamu Menang.'
+    }
+
+alert(`Kamu memilih batu. computer memilih ${computerMove}. Kamu ${hasil}`)
+    ">Batu
+  </button>
+
+  <!-- ? Batas -->
+
+  <button class="button" onclick="
+  const randomNumber2 = Math.random();
+let computerMove2 ='';
+
+    if (randomNumber2 >= 0 && randomNumber2 < 1 / 3 ){
+      computerMove2 = 'Batu';
+    } else if (randomNumber2 >= 1 / 3 && randomNumber2 < 2 / 3) {
+      computerMove2 = 'Kertas';
+    } else if(randomNumber2 >= 2 / 3 && randomNumber2 < 1){
+      computerMove2 = 'Gunting';
+    }
+
+let hasil2 ='';
+    if(computerMove2 ==='Batu'){
+      hasil2='Seri.'
+    } else if (computerMove2 === 'Kertas'){
+      hasil2='Kamu Kalah.'
+    } else if (computerMove2 ==='Gunting'){
+      hasil2='Kamu Menang.'
+    }
+
+alert(`Kamu memilih Kertas. computer memilih ${computerMove2}. Kamu ${hasil2}`)
+  ">
+    Kertas
+  </button>
+
+  <!-- ? Batas -->
+
+  <button class="button" onclick="
+  const randomNumber3 = Math.random();
+let computerMove3 ='';
+
+    if (randomNumber3 >= 0 && randomNumber3 < 1 / 3 ){
+      computerMove3 = 'Batu';
+    } else if (randomNumber3 >= 1 / 3 && randomNumber3 < 2 / 3) {
+      computerMove3 = 'Kertas';
+    } else if(randomNumber3 >= 2 / 3 && randomNumber3 < 1){
+      computerMove3 = 'Gunting';
+    }
+
+let hasil3 ='';
+    if(computerMove3 ==='Batu'){
+      hasil3 ='Seri.'
+    } else if (computerMove3 === 'Kertas'){
+      hasil3 ='Kamu Kalah.'
+    } else if (computerMove3 ==='Gunting'){
+      hasil3 ='Kamu Menang.'
+    }
+
+alert(`Kamu memilih Gunting. computer memilih ${computerMove3}. Kamu ${hasil3}`)
+  ">
+    Gunting
+  </button>
+
+
+</body>
+<script>
+
+</script>
+
+</html>
